@@ -1,0 +1,17 @@
+.menu a:hover,
+.menu a:active,
+.menu a:focus {
+    background-color: transparent !important;
+    background: transparent !important;
+    color: inherit !important;
+    opacity: 1 !important;
+}
+.menu li > a:hover {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+.btm-nav button.btm-nav-label img,
+.btm-nav button.active img {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(100%) saturate(2476%) hue-rotate(212deg) brightness(98%) contrast(96%);
+}

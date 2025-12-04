@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="../CSS/style.css">
+      <title>ÁgilCash</title>
+  </head>
+  <body>
+    <section id="cabecalho">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <img src="../Images/logo.svg" alt="Logo ÁgilCash" class="ml-4  h-10">
+        </div>
+        <div class="navbar-end">
+              <img src="../Images/bell.svg" alt="Notificação" class="h-5 w-5 mx-4">
+        </div>
+      </div>
+    </section>
+
+    <section id="saudefinanceira">
+      <div class="flex flex-col border border-gray-300 mx-4 lg:mx-auto max-w-4xl my-4 sm:my-6 rounded-lg p-4"> 
+        <h1 class="text-center text-[#666666] font-medium">
+          Saldo Total
+        </h1>
+        <p class="text-center text-[#28A745] text-xl font-semibold">
+          R$ 2.000,00
+        </p>
+      </div>
+      <div class="flex items-center justify-between mx-4 lg:mx-auto max-w-4xl">
+      <div class="flex flex-col">
+        <h1 class="text-[#666666] font-semibold text-sm">
+          Visão Geral
+        </h1>
+        <h2 class="text-[#CECECE] font-medium text-xs">
+          Receitas e Despesas
+        </h2>
+      </div>
+      <div class="flex items-center">
+        <label class="form-control">
+          <select class="select select-bordered py-0.5 text-sm text-[#666666] bg-[#F3F3F3] font-medium">
+            <option>Outubro</option>
+            <option>Novembro</option>
+            <option>Dezembro</option>
+            <option>Janeiro</option>
+          </select>
+        </label>
+      </div>
+      </div>
+        <div id="grafico" class="flex justify-center my-6">
+          <img src="../Images/grafico.svg" alt="Grafico" class="w-48 sm:w-56 md:w-64 lg:w-72 xl:w-80" >
+        </div>
+      <div class="flex items-center justify-between gap-6 mx-4 lg:mx-auto max-w-4xl my-6">
+        <div class="border rounded-lg py-2 px-14 bg-[#F3F3F3]">
+          <h1 class="text-center text-[#666666] font-medium text-sm">
+            Entradas
+          </h1>
+          <p class="text-center text-[#28A745] font-semibold text-base">
+            R$ 3.000,00
+          </p>
+        </div>
+        <div class="border rounded-lg py-2 px-14 bg-[#F3F3F3]">
+          <h1 class="text-center text-[#666666] font-medium text-sm">
+            Saídas
+          </h1>
+          <p class="text-center text-[#DC3545] font-medium text-base">
+            R$ 1.000,00
+          </p>
+        </div>
+      </div>
+        <p class="text-center text-[#8C8C8C] uppercase font-light text-xs mb-9">
+          Sua saúde financeira está boa! 🚀
+        </p>
+    </section>
+
+    <section id="lancamentos" class="pb-20">
+      <div class="mx-4 lg:mx-auto max-w-4xl mb-0.5">
+        <p class="text-[#333333] font-semibold">
+          Últimos Lançamentos
+        </p>
+      </div>
+      <div class="mx-4 lg:ml-auto lg:mx-auto max-w-4xl mt-0">
+        <ul class="menu rounded-box w-full bg-[#FFFFFF] border border-[#CCCCCC] p-0">
+          <li class="border-b border-[#CCCCCC]">
+            <a class="flex items-center justify-between w-full p-3">
+              <div class="flex items-center gap-3">
+                <div class="icone-lancamento">
+                  <img src="../Images/shopping-cart.svg" alt="Compras Mercado" class="h-6 w-6">
+                </div>
+                <div class="flex flex-col">
+                  <div class="texto-lancamento text-[#333333] font-medium">Compras Mercado</div>
+                  <div class="categoria-lancamento text-[#666666] text-xs font-light">Mercado</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="valor-lancamento text-[#DC3545] text-xs">R$ 250,00</div>
+                <div class="botao-edicao">
+                  <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  class="h-5 w-5" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor">
+                    <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="border-b border-[#CCCCCC]">
+            <a class="flex items-center justify-between w-full">
+              <div class="flex items-center gap-3">
+                <div class="icone-lancamento">
+                  <img src="../Images/interrogation.svg" alt="sem categoria" class="h-6 w-6">
+                </div>
+                <div class="flex flex-col">
+                  <div class="texto-lancamento text-[#333333] font-medium">Cinema</div>
+                  <div class="categoria-lancamento text-[#F3B38B] text-xs font-light italic">sem categoria</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="valor-lancamento text-[#DC3545] text-xs">R$ 92,00</div>
+                <div class="botao-edicao">
+                  <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  class="h-5 w-5" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor">
+                    <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="flex items-center justify-between w-full">
+              <div class="flex items-center gap-3">
+                <div class="icone-lancamento">
+                  <img src="../Images/book-alt.svg" alt="Livro" class="h-6 w-6">
+                </div>
+                <div class="flex flex-col">
+                  <div class="texto-lancamento text-[#333333] font-medium">Livro Clean Code</div>
+                  <div class="categoria-lancamento text-[#666666] text-xs font-light">Estudos</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="valor-lancamento text-[#DC3545] text-xs">R$ 220,00</div>
+                <div class="botao-edicao">
+                  <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  class="h-5 w-5" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor">
+                    <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="rodape">
+      <div class="btm-nav bg-[#F3F3F3] border-t border-[#CCCCCC] pt-2 py-1">
+        <button class="btm-nav-label">
+          <img src="../Images/home.svg" alt="Início" class="h-7 w-7">
+          <span class="btm-nav-label text-[#007BFF] font-medium text-sm">Início</span>
+        </button>
+        <button>
+          <img src="../Images/clock-three.svg" alt="Histórico" class="h-7 w-7">
+          <span class="btm-nav-label">Histórico</span>
+        </button>
+        <button>
+          <img src="../Images/chart-line-up.svg" alt="Relatórios" class="h-7 w-7">
+          <span class="btm-nav-label">Relatórios</span>
+        </button>
+        <button>
+          <img src="../Images/user.svg" alt="Conta" class="h-7 w-7">
+          <span class="btm-nav-label">Conta</span>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
